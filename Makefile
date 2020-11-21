@@ -14,6 +14,9 @@ cssee:
 
 csfix:
 	./vendor/bin/phpcbf
-
 stan:
+	./vendor/bin/phpstan analyse -c phpstan.neon
+stanfolder:
 	./vendor/bin/phpstan analyse $(COMMAND_ARGS)
+
+	
