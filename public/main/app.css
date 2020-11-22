@@ -1,0 +1,13 @@
+/** colors */
+
+body {
+  font-family: "Nunito";
+  background-color: #FEFEFE;
+}
+
+body #app {
+  width: 100%;
+  margin: auto;
+  padding: 25px 5%;
+}
+
