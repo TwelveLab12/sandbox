@@ -2,28 +2,16 @@ require('./bootstrap');
 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
 Vue.use(VueRouter)
 
-import App from './views/App'
-import Hello from './views/Hello'
-import Home from './views/Home'
+import routes from './routes';
 
 const router = new VueRouter({
     mode: 'history',
-    routes: [
-        {
-            path: '/home',
-            name: 'home',
-            component: Home
-        },
-        {
-            path: '/hello',
-            name: 'hello',
-            component: Hello,
-        },
-    ],
+    routes: routes,
 });
+
+import App from './views/Main/App'
 
 const app = new Vue({
     el: '#app',
